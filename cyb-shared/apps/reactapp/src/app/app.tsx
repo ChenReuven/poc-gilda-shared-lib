@@ -4,10 +4,13 @@ import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
 
 import { Route, Link } from 'react-router-dom';
+import { CybButton } from '@cyb-shared/react-ui-components';
 
 export function App() {
   return (
     <div className={styles.app}>
+      <h1>React App</h1>
+      <CybButton title="My Button" />
       <header className="flex">
         <Logo width="75" height="75" />
         <h1>Welcome to reactapp!</h1>
