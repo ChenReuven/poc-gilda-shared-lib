@@ -2,7 +2,9 @@ const rootMain = require('../../../.storybook/main');
 
 module.exports = {
   ...rootMain,
-
+  features: {
+    buildStoriesJson: true,
+  },
   stories: [
     ...rootMain.stories,
     '../src/lib/**/*.stories.mdx',
@@ -19,4 +21,10 @@ module.exports = {
 
     return config;
   },
+  // refs: {
+  //   angular: {
+  //     title: 'Angular',
+  //     url: 'http://localhost:7008/',
+  //   },
+  // },
 };

@@ -47,6 +47,9 @@
       "tags": [],
       "implicitDependencies": ["angularapp"]
     },
+    "cyb-styles": {
+      "tags": []
+    },
     "react-ui-components": {
       "tags": []
     },

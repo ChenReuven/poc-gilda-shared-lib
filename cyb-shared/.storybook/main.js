@@ -8,4 +8,15 @@ module.exports = {
   //   // Return the altered config
   //   return config;
   // },
+  // your Storybook configuration
+  refs: {
+    // react: {
+    //   title: 'React',
+    //   url: 'http://localhost:7007',
+    // },
+    angular: {
+      title: 'Angular',
+      url: 'http://localhost:7008',
+    },
+  },
 };

@@ -4,7 +4,9 @@ module.exports = {
   ...rootMain,
 
   core: { ...rootMain.core, builder: 'webpack5' },
-
+  features: {
+    buildStoriesJson: true,
+  },
   stories: [
     ...rootMain.stories,
     '../src/lib/**/*.stories.mdx',

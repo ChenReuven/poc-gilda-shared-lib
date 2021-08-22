@@ -18,6 +18,7 @@
       "@cyb-shared/angular-ui-components": [
         "libs/angular-ui-components/src/index.ts"
       ],
+      "@cyb-shared/cyb-styles": ["libs/cyb-styles/src/index.ts"],
       "@cyb-shared/react-ui-components": [
         "libs/react-ui-components/src/index.ts"
       ]

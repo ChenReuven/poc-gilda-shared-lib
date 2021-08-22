@@ -202,6 +202,27 @@
         }
       }
     },
+    "cyb-styles": {
+      "root": "libs/cyb-styles",
+      "sourceRoot": "libs/cyb-styles/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/cyb-styles/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/cyb-styles"],
+          "options": {
+            "jestConfig": "libs/cyb-styles/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "react-ui-components": {
       "root": "libs/react-ui-components",
       "sourceRoot": "libs/react-ui-components/src",
