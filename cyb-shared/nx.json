@@ -14,7 +14,13 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
       }
     }
   },
@@ -30,6 +36,10 @@
     "angular-ui-components": {
       "tags": []
     },
+    "angular-ui-components-e2e": {
+      "tags": [],
+      "implicitDependencies": ["angular-ui-components"]
+    },
     "angularapp": {
       "tags": []
     },
@@ -39,6 +49,10 @@
     },
     "react-ui-components": {
       "tags": []
+    },
+    "react-ui-components-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-ui-components"]
     },
     "reactapp": {
       "tags": []
